@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "coros": {
+    "coros-training": {
       "type": "streamableHttp",
       "url": "https://mcpcn.coros.com/mcp",
       "timeout": 30000

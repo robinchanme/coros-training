@@ -33,7 +33,9 @@ WorkBuddy 连接器，采用 MCP + Skill。数据服务使用高驰官方 MCP，
     └── references/tools.md
 ```
 
-`mcp.json` 只配置一个 Server，地址为 `https://mcpcn.coros.com/mcp`，传输类型是 `streamableHttp`。未填写 Token。`connector-meta.json` 不设置 `auth_mode`，由 WorkBuddy 按 MCP OAuth 2.1 + PKCE 连接。
+`mcp.json` 只配置一个 Server，名为 `coros-training`，地址为 `https://mcpcn.coros.com/mcp`，传输类型是 `streamableHttp`。未填写 Token。`connector-meta.json` 不设置 `auth_mode`，由 WorkBuddy 按 MCP OAuth 2.1 + PKCE 连接。
+
+Server 名必须与 `connector-meta.json` 的 `source`、技能 frontmatter 的 `name` 和 `skills/` 下的目录名保持一致，四处都是 `coros-training`。Server 名决定用户在 Skill 里看到的工具归属，写成 `coros` 会与市场官方只读版混淆。
 
 当前默认中国大陆节点，因为从大陆访问官方网关时，受保护资源和授权服务器都落在 `mcpcn.coros.com`。高驰不接受 `workbuddy://` 回调，只接受 HTTPS 或本机 `http://127.0.0.1` 回调；WorkBuddy 在私有协议被拒绝后会回退到本机回调。
 
