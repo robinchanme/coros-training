@@ -1,0 +1,28 @@
+{
+  "name": "高驰训练",
+  "name_zh": "高驰训练",
+  "name_en": "COROS Training",
+  "description": "Review COROS training and health data, and update plans or workouts after you confirm.",
+  "description_zh": "连接高驰账号，查询运动、睡眠、恢复与体能数据，并在你确认后创建、修改训练计划、课程库模板和每日排期。",
+  "description_en": "Review COROS health and training, then create or update plans and workouts after confirmation.",
+  "source": "coros-training",
+  "type": "mcp",
+  "version": "1.0.0",
+  "minWorkbuddyVersion": "4.24.0",
+  "examples_zh": [
+    "看看我最近两周的跑步记录",
+    "分析我这个月的睡眠和恢复情况",
+    "结合最近的训练，帮我做一份六周半马计划",
+    "把这周四的阈值间歇缩短到 20 分钟",
+    "明天安排一节 30 分钟轻松跑",
+    "看看我这个月练得是不是太多了"
+  ],
+  "examples_en": [
+    "Show my runs from the past two weeks",
+    "How did my sleep and recovery look this month?",
+    "Build a six-week half-marathon plan from my recent training",
+    "Shorten this Thursday's threshold session to 20 minutes",
+    "Schedule a 30-minute easy run for tomorrow",
+    "Am I overtraining this month?"
+  ]
+}
